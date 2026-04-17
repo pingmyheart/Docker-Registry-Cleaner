@@ -1,6 +1,14 @@
 # Docker-Registry-Cleaner
 *Docker Registry Cleaner based on image tag and image age.*
 
+![Last Commit](https://img.shields.io/github/last-commit/pingmyheart/Docker-Registry-Cleaner)
+![Repo Size](https://img.shields.io/github/repo-size/pingmyheart/Docker-Registry-Cleaner)
+![Issues](https://img.shields.io/github/issues/pingmyheart/Docker-Registry-Cleaner)
+![Pull Requests](https://img.shields.io/github/issues-pr/pingmyheart/Docker-Registry-Cleaner)
+![License](https://img.shields.io/github/license/pingmyheart/Docker-Registry-Cleaner)
+![Top Language](https://img.shields.io/github/languages/top/pingmyheart/Docker-Registry-Cleaner)
+![Language Count](https://img.shields.io/github/languages/count/pingmyheart/Docker-Registry-Cleaner)
+
 ## Features
 
 - **Tag-Based Cleanup**: Remove images based on specific snapshot tags.
@@ -10,7 +18,7 @@
 
 ## Required Configuration
 
-To use the arcs-registry-cleaner, you need to set up a few required configurations:
+To use the cleaner, you need to set up a few required configurations:
 
 1. **Days Cleanup Threshold**: Specify the number of days after which images should be considered for cleanup.
 2. **Enabled Services**: Define which services (DockerHub, Self-Hosted Registry) should be cleaned up.
@@ -42,7 +50,7 @@ DOCKERHUB_REGISTRY_URL=https://hub.docker.com
 
 ## Usage
 
-Run the arcs-registry-cleaner as a cron job or a scheduled task in your preferred environment. The cleaner will
+Run the cleaner as a cron job or a scheduled task in your preferred environment. The cleaner will
 automatically check for images that meet the specified cleanup criteria and remove them from the configured registries.
 You can also run it manually whenever you want to perform a cleanup by executing the cleaner script with the appropriate
 environment variables set.
